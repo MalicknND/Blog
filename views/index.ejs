@@ -1,0 +1,40 @@
+<%- include("./partials/header") %>
+<%- include("./partials/navbar") %>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <h3 class="mb-8">Tous les articles 😇 </h3>
+    <br>
+    <br>
+    <% blogs.reverse() %> 
+
+    <% blogs.forEach(function (blog){ %>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-mb-3">
+                    <img src="https://cdn.pixabay.com/photo/2018/04/20/21/10/code-3337044_960_720.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="text-muted">published at: <%= blog.postedAt %> </p>
+                <h5 class="card-title"><%= blog.title %> </h5>
+                <p class="card-text"><%= blog.content.slice(0, 99) %> .... <a href="/blog/<%= blog._id %>">Read More</a></p>
+                <a href=" /blog/<%= blog._id %>" class="btn btn-primary">Read More...</a>
+                <a href=" /delete/<%= blog._id %>" class="btn btn-danger">Delete</a>
+                <a href=" /edit/<%= blog._id %>" class="btn btn-warning">Edit</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+    <% }) %>
+
+</div>
+
+<%- include("./partials/footer") %>
