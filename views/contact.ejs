@@ -5,62 +5,23 @@
 <br>
 <br>
 <br>
-<div id="contact" class="">
-    
-  <div class="container text-center">
-      <h2 class="h1 contact-intro center-border intro-h1">contact</h2>
-      <p class="contact-desc intro-desc-p">I'm Available 24h/7</p>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="contact-info">
-            <h2 class="h1"><i class="fa fa-info-circle"></i></h2>
-            <p>Address : Sicap Mbao, Dakar, Senegal <br>
-              Email : mstspr1155@gmail.com <br>
-              Phone : +221 77 992 99 52 <br>
-              Whatsapp : +221 76 377 22 60 <br>
-            </p>
-            <div class="social-link">
-               <h1><i class="fa fa-thumbs-o-up"></i> Follow Us!</h1> 
-               <a href="https://www.fb.com/mst.1155"><i class="fa fa-facebook-square fa-3x"></i></a>
-               <a href="https://www.twitter.com/xarala221"><i class="fa fa-twitter-square fa-3x"></i></a>
-               <a href="https://www.fb.com/xarala221"><i class="fa fa-google-plus-square fa-3x"></i></a>
-               <a href="https://www.github.com/xarala221"><i class="fa fa-github-square fa-3x"></i></a>
-            </div>
-            
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="contact-form">
-            <h2><i class="fa fa-send"></i>	Or Write to me</h2>
-            <div class="form-group">
-<form action="" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='Avx739VojvuAJnBoKJKyBc17aYGOAu2iqI12WjIbUUB1z0kW3GAe1lHTaFhWrEru' />
-<div class="form-group">
-  <p><label for="id_name">Name :</label> <input type="text" name="name" placeholder="Your Name" class="form-control " required id="id_name" /></p>
-<p><label for="id_email">Email :</label> <input type="email" name="email" placeholder="Your Email" class="form-control " required id="id_email" /></p>
-<p><label for="id_message">Message :</label> <textarea name="message" cols="40" rows="10" placeholder="What you want to say? Are You have a project? or you need help?" class="form-control " required id="id_message">
-</textarea></p>
-</div>
-<button type="submit" class="btn btn-outline-light">Send</button>
-</form>
-</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="footer text-center">
 <div class="container">
-<p>&copy; 2018 Ousseynou Diop
-</p>
-</div>
-</div>
-<!-- Back To Top -->
-<div class="scroll-top-wrapper ">
-<span class="scroll-top-inner">
-<i class="fa fa-2x fa-arrow-circle-up"></i>
-</span>
-</div>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Votre Nom</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Votre Email</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <textarea name="content" cols="30" rows="10" class="mt-3 form-control" placeholder="Enter Your Message..."
+            required></textarea>
+
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+  </div>
 
 
 <%- include("./partials/footer") %>
